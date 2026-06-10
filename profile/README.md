@@ -58,10 +58,12 @@ graph LR
 
 ## Status
 
-🚀 Preparing the first `0.1.0` release of `@agentcompose/spec`, `@agentcompose/sdk`,
-and `@agentcompose/engine` — public on GitHub, npm publish imminent. Early and evolving
-(`0.x`): the contract shape is intended to be durable, but additive and breaking changes
-may still occur before `1.0`. Feedback and RFC-style proposals welcome.
+🚀 First release published at **`0.1.0`** (with build provenance):
+[`@agentcompose/spec`](https://www.npmjs.com/package/@agentcompose/spec),
+[`@agentcompose/sdk`](https://www.npmjs.com/package/@agentcompose/sdk), and
+[`@agentcompose/engine`](https://www.npmjs.com/package/@agentcompose/engine). Early
+and evolving (`0.x`): the contract shape is intended to be durable, but additive and
+breaking changes may still occur before `1.0`. Feedback and RFC-style proposals welcome.
 
 ## License
 
