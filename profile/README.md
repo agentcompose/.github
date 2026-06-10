@@ -50,16 +50,18 @@ graph LR
 | Repo | Description |
 |------|-------------|
 | [**spec**](https://github.com/agentcompose/spec) | The contract: JSON Schemas + normative specification |
-| _sdk-typescript_ | _(in progress)_ TypeScript SDK |
+| [**sdk-typescript**](https://github.com/agentcompose/sdk-typescript) | TypeScript SDK — define configurable agent components (`npm i @agentcompose/sdk`) |
+| [**engine**](https://github.com/agentcompose/engine) | Headless orchestration engine — goal → plan → execute (`npm i @agentcompose/engine`) |
+| [**playground**](https://github.com/agentcompose/playground) | A React harness over the engine — a live value test |
 | _sdk-python_ | _(planned)_ Python SDK |
-| _runtime_ | _(planned)_ The orchestration runtime |
 | _registry_ | _(planned)_ Discovery catalog for agents |
 
 ## Status
 
-🚧 Early and evolving (`0.x`). The contract shape is intended to be durable;
-breaking changes may still occur before `1.0`. Feedback and RFC-style proposals
-welcome.
+🚀 Preparing the first `0.1.0` release of `@agentcompose/spec`, `@agentcompose/sdk`,
+and `@agentcompose/engine` — public on GitHub, npm publish imminent. Early and evolving
+(`0.x`): the contract shape is intended to be durable, but additive and breaking changes
+may still occur before `1.0`. Feedback and RFC-style proposals welcome.
 
 ## License
 
