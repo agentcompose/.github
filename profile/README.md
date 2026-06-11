@@ -24,9 +24,9 @@ standardized.
 graph LR
     C["Agent component<br/>defaults + declared config"] -->|"+ your config"| I["Configured instance"]
     I --> R[Research]
-    R --> Co[Coding]
-    Co --> V[Review]
-    V --> F[Result]
+    R --> A[Analysis]
+    A --> Co[Coding]
+    Co --> F[Result]
 ```
 
 ## Principles
@@ -52,16 +52,21 @@ graph LR
 | [**spec**](https://github.com/agentcompose/spec) | The contract: JSON Schemas + normative specification |
 | [**sdk-typescript**](https://github.com/agentcompose/sdk-typescript) | TypeScript SDK — define configurable agent components (`npm i @agentcompose/sdk`) |
 | [**engine**](https://github.com/agentcompose/engine) | Headless orchestration engine — goal → plan → execute (`npm i @agentcompose/engine`) |
+| [**research-agent**](https://github.com/agentcompose/research-agent) | Reference worker (`research`) — adaptive, cited deep-research report |
+| [**analysis-agent**](https://github.com/agentcompose/analysis-agent) | Reference worker (`analyze`) — weighted-criteria ranking + recommendation |
+| [**coding-agent**](https://github.com/agentcompose/coding-agent) | Reference worker (`code`) — edits a scoped, diffable workspace |
 | [**playground**](https://github.com/agentcompose/playground) | A React harness over the engine — a live value test |
 | _sdk-python_ | _(planned)_ Python SDK |
 | _registry_ | _(planned)_ Discovery catalog for agents |
 
 ## Status
 
-🚀 First release published at **`0.1.0`** (with build provenance):
-[`@agentcompose/spec`](https://www.npmjs.com/package/@agentcompose/spec),
-[`@agentcompose/sdk`](https://www.npmjs.com/package/@agentcompose/sdk), and
-[`@agentcompose/engine`](https://www.npmjs.com/package/@agentcompose/engine). Early
+🚀 Published on npm with build provenance:
+[`@agentcompose/spec@0.1.1`](https://www.npmjs.com/package/@agentcompose/spec),
+[`@agentcompose/sdk@0.1.2`](https://www.npmjs.com/package/@agentcompose/sdk), and
+[`@agentcompose/engine@0.1.2`](https://www.npmjs.com/package/@agentcompose/engine) —
+plus three reference worker agents (`research`, `analyze`, `code`) that demonstrate
+real cross-domain coordination through the engine, with end-to-end tracing. Early
 and evolving (`0.x`): the contract shape is intended to be durable, but additive and
 breaking changes may still occur before `1.0`. Feedback and RFC-style proposals welcome.
 
